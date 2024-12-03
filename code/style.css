@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  color: rgb(74, 74, 74);
+  line-height: 1.5;
+}
+
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a:active, a:hover {
+    color: rgb(216, 216, 216)
+}
+
+
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+}
+
+header .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo p span {
+  color: rgb(155, 155, 155);
+}
+
+.logo p {
+  font-size: 32px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+nav a {
+  padding-right: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:last-child {
+  padding-right: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+  padding: 32px 24px;
+  background-color: rgb(216, 216, 216);
+  align-items: center;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.main-Images {
+  width: 100%;
+}
+
+.hero button {
+  padding: 8px auto;
+  height: 60px;
+  width: 100%;
+  color: white;
+  background-color: rgb(74, 74, 74);
+  border: 2px solid rgb(74, 74, 74);
+  border-radius: 3px;
+  transition: 0.2s ease-in;
+}
+
+.hero button:active {
+    background-color: rgb(216, 216, 216);
+}
+
+.hero button:hover {
+    transition: 0.2s ease-out;
+    transform: scale(1.01);
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+}
+
+.introduction {
+  padding: 32px 0px 32px 24px;
+}
+
+.newsfeed {
+  border-left: 1px solid;
+  border-color: rgb(216, 216, 216);
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1.45fr;
+  gap: 16px;
+}
+
+.info {
+    border: solid rgb(216, 216, 216);
+    margin: 1px;
+}
+
+.info:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+
+.info img {
+  padding: 16px;
+  width: 100%;
+  margin: auto;
+}
+
+.description {
+  margin: auto 19px;
+}
+
+.description p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.info a {
+  text-decoration: none;
+  color: rgb(93, 146, 220);
+}
+
+.info a:hover {
+    color: blue;
+}
+
+.learning {
+  background-color: rgb(216, 216, 216);
+  padding: 0px 72px 32px 72px;
+}
+
+.section-headline {
+  padding: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+}
+
+.categories {
+  background-color: white;
+  transition: 0.3s ease-in;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.categories:hover {
+    transition: 0.3s ease-out;
+    transform: scale(1.05);
+}
+
+.course-Description {
+  display: inline-block;
+  padding: 16px 16px 24px 16px;
+}
+
+.course-Description p {
+  margin: 8px 0 0 0;
+}
+.course-Description h3 {
+  margin-top: 0;
+}
+
+.categories img {
+  height: auto;
+  width: 100%;
+}
+
+.thesis .newsfeed {
+  border: none;
+}
+
+
+.thesis .introduction {
+  padding: 0px 0px 32px 24px;
+}
+
+.thesis .newsfeed {
+  padding-top: 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(216, 216, 216);
+  padding: 16px 24px 64px 16px;
+  align-items: start;
+  font-size: 14px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+
+footer a:first-child {
+  padding-right: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  header .desktop,.desktop {
+    display: none;
+  }
+
+  .hero {
+    display: block;
+    padding: 0;
+  }
+
+  .hero .headline h1{
+    margin: 0;
+  }
+
+  .hero .headline p {
+    margin-top: 32px;
+  }
+
+  .hero .headline {
+    padding: 32px 16px;
+  }
+
+  .hero button {
+    background-color: rgb(155, 155, 155);
+    font-weight: 500;
+  }
+
+  .information {
+    display: block;
+  }
+
+
+  .newsfeed {
+    border: none;
+    padding-bottom: 16px;
+  }
+
+  .info {
+    padding: 16px;
+    display: block;
+    overflow: hidden;
+    border: none;
+  }
+
+  .learning {
+    padding: 32px 16px;
+    background-color: rgb(245, 244, 245);
+  }
+
+  .learning h2 {
+    padding-top: 0;
+  }
+
+  }
+
+  .thesis .introduction {
+    padding: 0;
+  }
+
+  .thesis .section-headline {
+    padding-bottom: 16px;
+  }
+  .thesis {
+    margin-bottom: 24px;
+  }
+
+  footer {
+    padding: 0;
+    border: none;
+  }
+
+  footer p {
+    padding: 16px;
+  }
+
